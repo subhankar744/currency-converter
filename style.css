@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(77, 223, 231, 1) 0%, rgba(153, 241, 190, 1) 100%);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 320px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#title {
+    font-size: 1.8rem;
+    color: rgb(33, 43, 54);
+    margin-bottom: 16px;
+}
+
+#coinSticker {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 10px auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, rgba(77, 223, 231, 0.8), rgba(153, 241, 190, 0.8));
+    box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1), inset -3px -3px 8px rgba(255, 255, 255, 0.6);
+}
+
+#userValue {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    margin: 12px 0;
+    border-radius: 6px;
+    border: 1px solid rgb(200, 200, 200);
+    outline: transparent;
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+    transition: border-color 0.2s;
+}
+
+#userValue:focus {
+    border-color: rgb(77, 223, 231);
+    box-shadow: 0 0 0 2px rgba(77, 223, 231, 0.4);
+}
+
+.selecterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+}
+
+.selecterContainer select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgb(200, 200, 200);
+    outline: transparent;
+    width: 40%;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.selecterContainer select:focus {
+    border-color: rgb(77, 223, 231);
+    box-shadow: 0 0 0 2px rgba(77, 223, 231, 0.4);
+}
+
+#switchCurrency {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: rgb(77, 223, 231);
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#switchCurrency:hover {
+    color: rgb(33, 150, 243);
+    transform: rotate(180deg);
+}
+
+#status {
+    font-size: 0.9rem;
+    margin-top: 12px;
+    color: rgb(105, 105, 105);
+    text-transform: capitalize;
+}
+
+#btn {
+    width: 100%;
+    background: linear-gradient(90deg, rgb(77, 223, 231), rgb(153, 241, 190));
+    border: none;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(77, 223, 231, 0.5);
+}
+
+#result {
+    width: 100%;
+    padding: 12px 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgba(77, 223, 231, 0.2);
+    color: rgb(33, 43, 54);
+    margin-top: 10px;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
